@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            margin-top: 3px;
+        }
+        .red {
+            background-color: red;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .green {
+            background-color: green;
+        }
+        .last {
+            display: inline-block;
+        }
+        .tab {
+            
+            background-color: yellow;
+            width: 100px;
+            height: 25px;
+            margin-top: 1px;
+        }
+         
+        /* tablet */
+        @media screen and (min-width: 700px) {
+            div {
+              display: inline-block;
+              width: 450px;
+            }
+            .tab {
+                width: 223px;
+                height: 50px;
+                display: inline-block;
+            }
+        }
+
+        /* Laptop */
+        @media screen and (min-width: 900px) { 
+            div {
+                display: list-item;
+                width: 800px;
+            }
+            .red {
+                width: 800px;
+                height: 100px;
+            }
+            .blue, .green {
+                display: inline-block;
+                height: 250px;
+                width: 264px;
+            }
+            .tab {
+                width: 197px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div>
+        <div class="tab"></div>
+        <div class="tab"></div>
+        <div class="tab"></div>
+        <div class="tab"></div>
+    </div>
+</body>
+</html>
